@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    background-color: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100vh; 
+    overflow-x: hidden;
+    overflow-y: auto; 
+    align-items: center;
+
+    background-color: black;
+    color: white;
+}
+
+/*Configurações do header*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 20px;
+
+    background-color: #E6AB0A;
+}
+
+header nav {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    background-color: black;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+header a:hover {
+    background-color: #F5D770;
+    color: black;
+    transform: scale(1.1);
+}
+
+h1 {
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 5px;
+    padding: 0.3em;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 1200px;
+
+    font-size: 2.5rem;
+
+    color: black;
+    background-color: #E6AB0A;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    margin-bottom: 2em;
+    width: 100%;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.sistema {
+    flex-basis: 100%;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.sistema h2 {
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.emulator-block,
+.myboy-block,
+.johngba-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    gap: 20px;
+    background-color: rgba(161, 161, 161, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    height: auto;
+    margin: 10px 0;
+    text-align: center;
+    transition: transform 0.5s ease;
+}
+
+.emulator-block:hover,
+.myboy-block:hover,
+.johngba-block:hover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    gap: 20px;
+    background-color: #F5D770;
+    border-radius: 8px;
+    width: 100%;
+    height: auto;
+    margin: 20px 0 20px 0;
+    text-align: center;
+    transform: scale(1.01)
+}
+
+.emulator-block h2,
+.myboy-block h2,
+.johngba-block h2 {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: normal;
+    text-align: center;
+}
+
+.emulator img,
+.myboy img,
+.johngba img {
+    width: 250px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+.game {
+    text-decoration: none;
+    background-color:  #504f4f;    
+    width: 200px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.game:hover {
+    transform: scale(1.05);
+    background-color: #E6AB0A;
+}
+
+.game > h3:hover{
+    color: black;
+    text-decoration: none;
+}
+
+.game img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.game h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.jogos {
+    text-decoration: none;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    background-color: #504f4f;
+    padding: 1em;
+    border-radius: 8px;
+    font-size: larger;
+    text-align:left;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.sistema h2 {
+    text-decoration: none;
+    background-color: #504f4f;
+    padding: 0.5em;
+    border-radius: 8px;
+}
+
+/*Configurações do footer*/
+footer{
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+    
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+    color: white;
+
+    text-decoration: underline;
+}
+footer > a:nth-child(2){
+    color: white;
+}
