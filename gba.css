@@ -1,0 +1,235 @@
+/*Configurações gerais*/
+* {
+    background-color: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+/*Configurações do body*/
+body {
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: flex;
+    height: 100vh;  
+
+    background-color: black;
+    color: white;
+}
+
+/*Configurações do header*/
+header{
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+    display: flex;
+    padding: 20px;
+    width: 100%;
+    z-index: 2;
+
+    background-color: #E6AB0A;
+}
+header nav {
+    display: inline-block;
+    margin-right: 20px;
+}
+header a {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+
+    background-color: black;
+    color: white;
+
+    text-decoration: none;
+}
+header a:hover {
+    transform: scale(1.1);
+
+    background-color: #F5D770;
+    color: black;
+}
+
+/*Título da página (GBA, GBC, PLayStation 1, PSP, Nintendo DS, Nintendo 3DS)*/
+h1 {
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    max-width: 1200px;
+    margin-top: 1em;
+    padding: 0.3em;
+    width: 100%;
+
+    font-size: 2.5rem;
+
+    background-color: #E6AB0A;
+    color: black;
+}
+
+/*Texto de apresentação*/
+.jogos {
+    margin-bottom: 2em;
+    border-radius: 8px;
+    margin-right: 1em;
+    margin-left: 1em;
+    margin-top: 2em;
+    padding: 1em;
+
+    background-color: #504f4f;
+
+    text-decoration: none;
+    font-size: larger;
+    text-align:left;
+}
+
+/*Configuração da disposição dos emuladores*/
+.main-container {
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 2em;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    display: flex;
+    width: 100%;
+    gap: 2em;
+}
+
+/*Títulos dos tipos de emuladores (Windows, Andoroid, IOS...) -> Fundo*/
+.sistema {
+    margin-bottom: 1em;
+    text-align: center;
+    flex-basis: 100%;
+}
+/*Configurações dos tipos dos emuladores -> Texto*/
+.sistema h2{
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 0.5em;
+    
+    background-color: #504f4f;
+
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    color: white;
+}
+
+/*Configurações dos emuladores -> Fundo, Tamanho do bloco*/
+.emulator-block,
+.myboy-block,
+.johngba-block {
+    transition: transform 0.5s ease;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    margin: 10px 0;
+    display: flex;
+    padding: 20px;
+    height: auto;
+    width: 90%;
+    gap: 20px;
+
+    background-color: rgba(161, 161, 161, 0.1);
+
+    text-decoration: none;
+    text-align: center;
+}
+.emulator-block:hover,
+.myboy-block:hover,
+.johngba-block:hover {
+    justify-content: center;
+    flex-direction: column;
+    transform: scale(1.01);
+    margin: 20px 0 20px 0;
+    align-items: center;
+    border-radius: 8px;
+    display: flex;
+    height: auto;
+    width: 100%;
+    gap: 20px;
+
+    background-color: #F5D770;
+
+    text-decoration: none;
+    text-align: center;
+}
+/*Configuração das imagens dos emuladores*/
+.emulator img,
+.myboy img,
+.johngba img {
+    object-fit: contain;
+    border-radius: 8px;
+    width: 250px;
+    height: 100%;
+}
+/*Configurações dos títulos dos emuladores*/
+.emulator-block h2,
+.myboy-block h2,
+.johngba-block h2 {
+    color: white;
+
+    text-decoration: none;
+    font-weight: normal;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+/*Configuração geral da disposição dos games na tela*/
+.container {
+    justify-content: center;
+    margin-top: 2em;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 20px;
+}
+
+/*COnfiguração individual de cada game*/
+.game {      
+    transition: transform 0.3s ease;
+    border-radius: 8px;
+    padding: 10px;
+    width: 200px;
+    
+    background-color:  #504f4f;  
+
+    text-decoration: none;
+    text-align: center;
+}
+.game:hover {
+    transform: scale(1.05);
+
+    background-color: #E6AB0A;
+}
+/*Configuração da imagem de cada game*/
+.game img {
+    border-radius: 5px;
+    object-fit: cover;
+    height: 180px;
+    width: 180px;
+}
+
+/*Configurações do footer*/
+footer{
+    margin-bottom: 0.5em;
+    margin-top: 2em;
+    
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-align: center;
+    font-weight: 600;
+    color: white;
+}
+footer > a:nth-child(2), p:nth-child(2){
+    color: white;
+}
+footer a{
+    text-decoration: underline;
+}

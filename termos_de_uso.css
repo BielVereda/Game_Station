@@ -1,0 +1,70 @@
+/* Resetando margens e padding padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definindo o estilo básico da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0A1F3D;  /* Azul escuro */
+    color: white;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Container para centralizar o conteúdo */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Estilo do cabeçalho */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #2A6D9E;  /* Azul mais claro */
+}
+
+/* Estilo dos títulos das seções */
+h2 {
+    font-size: 1.8rem;
+    margin-top: 20px;
+    color: #2A6D9E;  /* Azul mais claro */
+}
+
+/* Estilo do texto das seções */
+p {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+/* Link do e-mail */
+a {
+    color: #A8C8E1;  /* Azul bem claro */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9rem;
+}
+
+/* Adicionando um fundo suave nas seções */
+section {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
