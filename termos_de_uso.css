@@ -67,16 +67,17 @@ p {
     margin: 10px 0;
 }
 
-/* Link do e-mail com animação de hover */
+/* Links com bom contraste e visibilidade */
 a {
-    color: #FFA500;
-    text-decoration: none;
+    color: #FFC107; /* amarelo com contraste melhor */
+    text-decoration: underline; /* sempre visível */
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
     transition: color 0.3s ease, transform 0.2s ease;
 }
 
 a:hover {
-    text-decoration: underline;
-    color: #FFD54F;
+    color: #FFD54F; /* tom mais claro no hover */
     transform: scale(1.05);
 }
 
