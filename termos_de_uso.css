@@ -1,125 +1,20 @@
-/* Resetando margens e padding padrão */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* Animações e efeitos visuais */
+.container { animation: fadeInBody 1s ease forwards; }
+@keyframes fadeInBody { from { transform: translateY(10px); opacity: 0.7; } to { transform: translateY(0); opacity: 1; } }
 
-/* Body visível desde o início para evitar NO_FCP */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #121212;
-    color: #E0E0E0;
-    line-height: 1.6;
-    padding: 20px;
-}
+header { animation: slideDown 0.8s ease forwards; transform: translateY(-10px); opacity: 0.8; }
+@keyframes slideDown { to { transform: translateY(0); opacity: 1; } }
 
-/* Container centralizado com fade-in visual */
-.container {
-    max-width: 900px;
-    margin: 0 auto;
-    animation: fadeInBody 1s ease forwards;
-    will-change: opacity, transform;
-}
+footer { animation: fadeInFooter 1.2s ease forwards; opacity: 0.9; }
+@keyframes fadeInFooter { to { opacity: 1; } }
 
-@keyframes fadeInBody {
-    from {
-        transform: translateY(10px);
-        opacity: 0.7;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-/* Cabeçalho */
-header {
-    text-align: center;
-    margin-bottom: 20px;
-    animation: slideDown 0.8s ease forwards;
-    transform: translateY(-10px);
-    opacity: 0.8;
-}
-
-@keyframes slideDown {
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-header h1 {
-    font-size: 2.5rem;
-    color: #FFD700;
-}
-
-/* Títulos das seções */
-h2 {
-    font-size: 1.8rem;
-    margin-top: 20px;
-    color: #FFA500;
-}
-
-/* Texto das seções */
-p {
-    font-size: 1rem;
-    margin: 10px 0;
-}
-
-/* Links com bom contraste e visibilidade */
-a {
-    color: #FFC107; /* amarelo com contraste melhor */
-    text-decoration: underline; /* sempre visível */
-    text-decoration-thickness: 2px;
-    text-underline-offset: 3px;
-    transition: color 0.3s ease, transform 0.2s ease;
-}
-
-a:hover {
-    color: #FFD54F; /* tom mais claro no hover */
-    transform: scale(1.05);
-}
-
-/* Rodapé */
-footer {
-    text-align: center;
-    margin-top: 30px;
-    font-size: 0.9rem;
-    color: #AAAAAA;
-    animation: fadeInFooter 1.2s ease forwards;
-    opacity: 0.9;
-}
-
-@keyframes fadeInFooter {
-    to {
-        opacity: 1;
-    }
-}
-
-/* Seções com efeito de fade-in quando carregam */
 section {
-    background-color: rgba(255, 255, 255, 0.05);
-    padding: 15px;
-    border-radius: 8px;
-    margin-bottom: 20px;
     animation: fadeInSection 0.8s ease forwards;
 }
-
 section:nth-child(2) { animation-delay: 0.1s; }
 section:nth-child(3) { animation-delay: 0.2s; }
 section:nth-child(4) { animation-delay: 0.3s; }
 section:nth-child(5) { animation-delay: 0.4s; }
 section:nth-child(6) { animation-delay: 0.5s; }
 section:nth-child(7) { animation-delay: 0.6s; }
-
-@keyframes fadeInSection {
-    from {
-        opacity: 0.85;
-        transform: translateY(10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
+@keyframes fadeInSection { from { opacity: 0.85; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
