@@ -8,10 +8,10 @@ O **Game Station** é um site estático que serve como uma biblioteca digital de
 
 ### Plataformas disponíveis:
 - 🕹️ Game Boy Advance (GBA) 🟢
-- 🕹️ Game Boy Color (GBC) 🔴
-- 🕹️ PlayStation 1 (PS1) 🔴
+- 🕹️ Game Boy Color (GBC) 🟢
+- 🕹️ PlayStation 1 (PS1) 🟢
 - 🕹️ PlayStation Portable (PSP) 🔴
-- 🕹️ Nintendo DS (NDS) 🔴
+- 🕹️ Nintendo DS (NDS) 🟢
 - 🕹️ Nintendo 3DS (3DS) 🔴
 
 #### 🟢 -> Pronto para uso.
