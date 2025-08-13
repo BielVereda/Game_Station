@@ -7,7 +7,22 @@
     <link rel="icon" type="image/svg+xml" href="/logo_site.svg">
     <title>Termos de Uso - Game Station</title>
 
-    <!-- CSS -->
+    <!-- Critical CSS inline (para pintar imediatamente) -->
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #121212; color: #E0E0E0; line-height: 1.6; padding: 20px; }
+        .container { max-width: 900px; margin: 0 auto; }
+        header { text-align: center; margin-bottom: 20px; }
+        header h1 { font-size: 2.5rem; color: #FFD700; }
+        h2 { font-size: 1.8rem; margin-top: 20px; color: #FFA500; }
+        p { font-size: 1rem; margin: 10px 0; }
+        a { color: #FFC107; text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 3px; transition: color 0.3s ease, transform 0.2s ease; }
+        a:hover { color: #FFD54F; transform: scale(1.05); }
+        footer { text-align: center; margin-top: 30px; font-size: 0.9rem; color: #AAAAAA; }
+        section { background-color: rgba(255,255,255,0.05); padding: 15px; border-radius: 8px; margin-bottom: 20px; }
+    </style>
+
+    <!-- Preload do CSS externo (animações, efeitos) -->
+    <link rel="preload" href="termos_de_uso.css" as="style">
     <link rel="stylesheet" href="termos_de_uso.css">
 
     <!-- Scripts -->
@@ -51,9 +66,7 @@
 
         <section>
             <h2>7. Contato</h2>
-            <p>Para mais informações ou dúvidas sobre os Termos de Uso, entre em contato conosco pelo e-mail: 
-                <a href="mailto:gamestationvereda@gmail.com">gamestationvereda@gmail.com</a>
-            </p>
+            <p>Para mais informações ou dúvidas sobre os Termos de Uso, entre em contato conosco pelo e-mail: <a href="mailto:gamestationvereda@gmail.com">gamestationvereda@gmail.com</a></p>
         </section>
 
         <footer>
