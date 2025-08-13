@@ -5,27 +5,28 @@
     box-sizing: border-box;
 }
 
-/* Animação de fade-in para toda a página */
+/* Body visível desde o início para evitar NO_FCP */
 body {
     font-family: Arial, sans-serif;
     background-color: #121212;
     color: #E0E0E0;
     line-height: 1.6;
     padding: 20px;
+}
+
+/* Container centralizado com fade-in */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
     animation: fadeInBody 1s ease forwards;
     opacity: 0;
+    will-change: opacity;
 }
 
 @keyframes fadeInBody {
     to {
         opacity: 1;
     }
-}
-
-/* Container centralizado */
-.container {
-    max-width: 900px;
-    margin: 0 auto;
 }
 
 /* Cabeçalho */
