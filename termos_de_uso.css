@@ -64,7 +64,7 @@ p {
 
 /* Link do e-mail com animação de hover */
 a {
-    color: #FFB74D;
+    color: #FFA500;
     text-decoration: none;
     transition: color 0.3s ease, transform 0.2s ease;
 }
