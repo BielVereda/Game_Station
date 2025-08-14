@@ -19,11 +19,11 @@ O **Game Station** é um site estático que serve como uma biblioteca digital de
 
 ## 🌐 Funcionalidades
 
-- Interface simples e intuitiva
-- Listagem de jogos com imagens e nomes
-- Links de download diretos (Google Drive)
-- Organização por plataforma
-- Visual responsivo (HTML + CSS + JavaScript)
+- Interface simples e intuitiva;
+- Listagem de jogos com imagens e nomes;
+- Links de download diretos (Google Drive);
+- Organização por plataforma;
+- Visual responsivo (HTML + CSS + JavaScript).
 
 ## 🛠️ Tecnologias utilizadas
 
