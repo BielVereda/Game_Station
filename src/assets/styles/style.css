@@ -1,0 +1,127 @@
+/*Configurações default*/
+* {
+    box-sizing: border-box;
+    background-color: none;
+    text-decoration: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+/*Configurções do body*/
+body {
+    background-color: black;
+    color: white;
+}
+
+/*Configurações do header*/
+header{
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+    display: flex;
+    padding: 20px;
+    width: 100%;
+    z-index: 2;
+
+    background-color: #E6AB0A;
+}
+/*Configurações do header (Botões)*/
+header nav {
+    display: inline-block;
+    margin-right: 20px;
+}
+header a {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    background-color: black;
+    padding: 10px 15px;
+    border-radius: 8px;
+
+    color: white;
+
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+header a:hover {
+    transform: scale(1.1);
+
+    background-color: #F5D770;
+    color: black;
+}
+
+/*Logotipo do site*/
+.titulo {
+    font-optical-sizing: auto;
+    margin-bottom: 30px;   
+    margin-top: 30px;  
+
+    font-style: normal;
+    text-align: center;
+}
+.titulo > img {
+    height: 300px;
+    width: 100%;
+}
+
+/*Apresentação*/
+.apresentacao{
+    border-radius: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 0.5em;
+
+    background-color: #E6AB0A;
+    color: #000000;
+}
+.apresentacao > ul {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    font-size: 24px;
+}
+
+/*Aviso (Logotipo)*/
+.aviso_img{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+}
+.aviso_img > img {
+    height: 200px;
+    width: 350px;
+}
+/*Aviso (Texto)*/
+.aviso{
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    margin-left: 20px;
+    display: flex;
+
+    background-color: #E6AB0A;
+    color: #000000;
+
+    font-optical-sizing: auto;
+    border-radius: 10px;
+    font-size: 24px;
+}
+
+/*Configurações do footer*/
+footer{
+    margin-bottom: 0.5em;
+    margin-top: 2em;
+    
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-align: center;
+    font-weight: 600;
+    color: white;
+}
+footer > a:nth-child(2), p:nth-child(2){
+    color: white;
+}
+footer a{
+    text-decoration: underline;
+}
