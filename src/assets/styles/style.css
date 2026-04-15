@@ -1,127 +1,71 @@
-/*Configurações default*/
-* {
-    box-sizing: border-box;
-    background-color: none;
-    text-decoration: none;
-    border: none;
-    padding: 0;
-    margin: 0;
+@import url('./global.css');
+
+/* Logotipo */
+.titulo {
+    text-align: center;
+    margin: 30px 0;
 }
 
-/*Configurções do body*/
-body {
-    background-color: black;
-    color: white;
+.titulo img {
+    height: 300px;
+    width: auto;
 }
 
-/*Configurações do header*/
-header{
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    flex-wrap: wrap;
-    display: flex;
-    padding: 20px;
-    width: 100%;
-    z-index: 2;
-
-    background-color: #E6AB0A;
+h1 {
+    text-align: center;
+    margin: 1em auto;
+    font-size: 2.5rem;
+    background: linear-gradient(90deg, #00ffe5, #a020f0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 10px #00ffe5, 0 0 20px #a020f0;
 }
-/*Configurações do header (Botões)*/
-header nav {
-    display: inline-block;
-    margin-right: 20px;
-}
-header a {
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    background-color: black;
-    padding: 10px 15px;
-    border-radius: 8px;
 
-    color: white;
-
-    text-decoration: none;
+/* Apresentação */
+.apresentacao ul {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 1.5em;
+    margin: 1.5em;
+    text-align: center;
     font-size: 1.2rem;
 }
-header a:hover {
-    transform: scale(1.1);
 
-    background-color: #F5D770;
-    color: black;
+.apresentacao ul li {
+    margin: 0.5em 0;
 }
 
-/*Logotipo do site*/
-.titulo {
-    font-optical-sizing: auto;
-    margin-bottom: 30px;   
-    margin-top: 30px;  
+.apresentacao ul li a {
+    color: #00ffe5;
+}
 
-    font-style: normal;
+.apresentacao p {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 1.5em;
+    margin: 1.5em;
+    color: #e0e0e0;
     text-align: center;
-}
-.titulo > img {
-    height: 300px;
-    width: 100%;
+    font-size: 1.2rem;
 }
 
-/*Apresentação*/
-.apresentacao{
-    border-radius: 20px;
-    margin-right: 20px;
-    margin-left: 20px;
-    padding: 0.5em;
-
-    background-color: #E6AB0A;
-    color: #000000;
-}
-.apresentacao > ul {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-
-    font-size: 24px;
+/* Aviso */
+.aviso {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    padding: 1em;
+    margin: 1.5em;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #00ffe5;
 }
 
-/*Aviso (Logotipo)*/
-.aviso_img{
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    width: 100%;
-}
-.aviso_img > img {
+.aviso_img img {
     height: 200px;
     width: 350px;
-}
-/*Aviso (Texto)*/
-.aviso{
-    justify-content: center;
     align-items: center;
-    margin-right: 20px;
-    margin-left: 20px;
-    display: flex;
-
-    background-color: #E6AB0A;
-    color: #000000;
-
-    font-optical-sizing: auto;
-    border-radius: 10px;
-    font-size: 24px;
 }
 
-/*Configurações do footer*/
-footer{
-    margin-bottom: 0.5em;
-    margin-top: 2em;
-    
-    font-optical-sizing: auto;
-    font-style: normal;
-    text-align: center;
-    font-weight: 600;
-    color: white;
-}
-footer > a:nth-child(2), p:nth-child(2){
-    color: white;
-}
-footer a{
-    text-decoration: underline;
+header a{
+    text-decoration: none;
 }

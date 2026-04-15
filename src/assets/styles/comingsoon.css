@@ -1,0 +1,85 @@
+@import url('./global.css');
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Área principal */
+.comingsoon {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #00ffe5;
+}
+
+.comingsoon h1 {
+    font-size: 4rem;
+    margin: 0;
+    letter-spacing: 0.1em;
+    text-shadow: 0 0 15px #00ffe5, 0 0 30px #a020f0;
+}
+
+.comingsoon p {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    color: #e0e0e0;
+}
+
+/* Cursor piscando */
+.blink {
+    animation: blink 1.5s infinite;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+/* Loading futurista */
+.loading {
+    margin: 2em auto;
+    width: 60px;
+    height: 60px;
+    border: 6px solid rgba(0, 255, 229, 0.3);
+    border-top: 6px solid #00ffe5;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1.5em;
+    border-top: 2px solid #00ffe5;
+    color: #aaa;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #00ffe5;
+    text-decoration: none;
+    margin-left: 5px;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

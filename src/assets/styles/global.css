@@ -1,0 +1,74 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Corpo */
+body {
+    background: radial-gradient(circle at center, #0f0f1a, #000000);
+    color: #00ffe5;
+    font-family: 'Orbitron', sans-serif;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: rgba(20, 20, 30, 0.8);
+    border-bottom: 2px solid #00ffe5;
+}
+
+header a {
+    color: #00ffe5;
+    border: 1px solid #00ffe5;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+header a:hover {
+    background: #00ffe5;
+    color: #000;
+    box-shadow: 0 0 10px #00ffe5, 0 0 20px #00ffe5;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1.5em;
+    margin-top: 2em;
+    border-top: 2px solid #00ffe5;
+    color: #aaa;
+    font-size: 0.9rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer a {
+    color: #00ffe5;
+    text-decoration: none;
+    margin-left: 5px;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade do footer */
+@media (max-width: 768px) {
+    footer {
+        font-size: 0.8rem;
+        padding: 1em;
+    }
+}

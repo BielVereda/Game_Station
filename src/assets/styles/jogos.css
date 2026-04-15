@@ -1,0 +1,152 @@
+@import url('./global.css');
+
+/* Títulos */
+h1 {
+    text-align: center;
+    margin: 1em auto;
+    font-size: 2.5rem;
+    background: linear-gradient(90deg, #00ffe5, #a020f0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 10px #00ffe5, 0 0 20px #a020f0;
+}
+
+h2 {
+    text-align: center;
+    margin: 1em auto;
+    font-size: 1.8rem;
+}
+
+header a{
+    text-decoration: none;
+}
+
+/* Texto de apresentação */
+.jogos {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 1.5em;
+    margin: 1.5em;
+    color: #e0e0e0;
+    font-size: 1.2rem;
+}
+
+/* Containers */
+.main-container,
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 2em auto;
+    max-width: 1200px;
+}
+
+.main-container {
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Cards de emuladores */
+.emulator-block,
+.myboy-block,
+.johngba-block {
+    background: rgba(20, 20, 30, 0.6);
+    border: 1px solid #00ffe5;
+    border-radius: 12px;
+    padding: 20px;
+    flex: 0 1 250px;
+    max-width: 280px;
+
+    /* Alinhamento interno */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* centraliza horizontalmente */
+    justify-content: center;
+    /* centraliza verticalmente */
+
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.emulator-block:hover,
+.myboy-block:hover,
+.johngba-block:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #00ffe5, 0 0 30px #a020f0;
+}
+
+/* Imagens dos emuladores */
+.emulator-block img,
+.myboy-block img,
+.johngba-block img {
+    border-radius: 8px;
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+    /* garante centralização */
+}
+
+/* Cards de jogos */
+.game {
+    background: rgba(20, 20, 30, 0.6);
+    border: 1px solid #00ffe5;
+    border-radius: 12px;
+    padding: 10px 5px;
+    flex: 1 1 180px;
+    max-width: 220px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.game:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #00ffe5, 0 0 30px #a020f0;
+}
+
+/* Imagens dos jogos */
+.game img {
+    border-radius: 8px;
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+
+    .main-container,
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .emulator-block,
+    .myboy-block,
+    .johngba-block,
+    .game {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .emulator-block img,
+    .myboy-block img,
+    .johngba-block img,
+    .game img {
+        width: 100%;
+        height: auto;
+    }
+}
