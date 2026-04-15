@@ -3,49 +3,38 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <title>Coming Soon - Game Station</title>
   <meta name="description" content="Página em construção! Em breve novidades incríveis estarão disponíveis aqui. Fique ligado!">
-
   <link rel="icon" type="image/svg+xml" href="./../assets/images/logo_site.svg" fetchpriority="high">
 
-  <title>Coming Soon</title>
-  <style>
-    body {
-      margin: 0;
-      height: 100vh;
-      background-color: #000000;
-      color: #FFD700;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      flex-direction: column;
-      text-align: center;
-    }
+  <!-- Fonte futurista -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
 
-    h1 {
-      font-size: 4rem;
-      margin: 0;
-      letter-spacing: 0.1em;
-    }
-
-    p {
-      font-size: 1.5rem;
-      margin-top: 1rem;
-      font-weight: 500;
-    }
-
-    .blink {
-      animation: blink 1.5s infinite;
-    }
-
-    @keyframes blink {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0; }
-    }
-  </style>
+  <!-- CSS específico -->
+  <link rel="stylesheet" href="./../assets/styles/comingsoon.css">
 </head>
 <body>
-  <h1>Coming Soon<span class="blink">_</span></h1>
-  <p>Fique ligado! Grandes novidades estão chegando.</p>
+  <header>
+    <nav>
+      <a href="./../../index.html">Início</a>
+      <a href="./gba.html">GBA</a>
+      <a href="./gbc.html">GBC</a>
+      <a href="./ps1.html">PlayStation 1</a>
+      <a href="./psp.html">PSP</a>
+      <a href="./nds.html">Nintendo DS</a>
+      <a href="./n3ds.html">Nintendo 3DS</a>
+    </nav>
+  </header>
+
+  <main class="comingsoon">
+    <h1>Coming Soon<span class="blink">_</span></h1>
+    <p>Fique ligado! Grandes novidades estão chegando.</p>
+    <div class="loading"></div>
+  </main>
+
+  <footer>
+    © 2025 Game Station - Todos os direitos reservados. | <a href="./termos_de_uso.html">Termos de uso</a>
+  </footer>
 </body>
 </html>
