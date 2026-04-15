@@ -11,10 +11,10 @@
     width: auto;
 }
 
-h1 {
+.titulo h1 {
     text-align: center;
-    margin: 1em auto;
-    font-size: 2.5rem;
+    margin: 0 auto;
+    font-size: 5rem;
     background: linear-gradient(90deg, #00ffe5, #a020f0);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -68,4 +68,14 @@ h1 {
 
 header a{
     text-decoration: none;
+}
+
+h2 {
+    text-align: center;
+    margin: 2.5rem auto;
+    font-size: 5rem;
+    background: linear-gradient(90deg, #00ffe5, #a020f0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 10px #00ffe5, 0 0 20px #a020f0;
 }

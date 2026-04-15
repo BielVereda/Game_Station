@@ -1,38 +1,48 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Bem-vindo ao site Game Station! Venha conhecer nossos jogos e se divirta relembando os velhos tempos..." />
-        <meta name="keywords" content="Game Station, Emuladores, Jogos Clássicos, GBA, GBC, PS1, PSP, NDS, N3DS, game station, emuladores, gbc, gbc, , pps1, psp, nds, n3ds, vereda, emulador, jogos, jogos antigos, Vereda, Game Station Vereda, game station vereda" />
 
-        <script src="./src/js/websocket-manager.js" defer></script>
-        
-        <link rel="icon" type="image/svg+xml" href="./src/assets/images/logo_site.svg" fetchpriority="high">
-        <title>Game Station</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Bem-vindo ao site Game Station! Venha conhecer nossos jogos e se divirta relembando os velhos tempos..." />
+    <meta name="keywords"
+        content="Game Station, Emuladores, Jogos Clássicos, GBA, GBC, PS1, PSP, NDS, N3DS, game station, emuladores, gbc, gbc, , pps1, psp, nds, n3ds, vereda, emulador, jogos, jogos antigos, Vereda, Game Station Vereda, game station vereda" />
 
-        <link rel="stylesheet" href="./src/assets/styles/style.css">
-    </head>
+    <script src="./src/js/websocket-manager.js" defer></script>
 
-    <body>
-        <header>
-            <nav><a href="./src/pages/gba.html" alt="GBA">GBA</a></nav>
-            <nav><a href="./src/pages/gbc.html" alt="GBC">GBC</a></nav>
-            <nav><a href="./src/pages/ps1.html" alt="PlayStation 1">PlayStation 1</a></nav>
-            <nav><a href="./src/pages/comingsoon.html" alt="PlayStation Portable">PSP</a></nav>
-            <nav><a href="./src/pages/nds.html" alt="Nintendo DS">Nintendo DS</a></nav>
-            <nav><a href="./src/pages/comingsoon.html" alt="Nintendo 3DS">Nintendo 3DS</a></nav>
-        </header>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
 
+    <link rel="icon" type="image/svg+xml" href="./src/assets/images/logo_site.svg" fetchpriority="high">
+    <title>Game Station</title>
+
+    <link rel="stylesheet" href="./src/assets/styles/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="./src/pages/gba.html">GBA</a>
+            <a href="./src/pages/gbc.html">GBC</a>
+            <a href="./src/pages/ps1.html">PlayStation 1</a>
+            <a href="./src/pages/comingsoon.html">PSP</a>
+            <a href="./src/pages/nds.html">Nintendo DS</a>
+            <a href="./src/pages/comingsoon.html">Nintendo 3DS</a>
+        </nav>
+    </header>
+
+    <!-- Landmark principal -->
+    <main>
         <div class="titulo">
-            <img src="./src/assets/images/logo.svg" alt="Essa é a imagem do logo da Game Station!" fetchpriority="high">
+            <img src="./src/assets/images/logo.webp" alt="Logo da Game Station" fetchpriority="high">
+            <h1>GAME STATION</h1>
         </div>
 
         <div class="apresentacao">
             <p>Se você é apaixonado por games clássicos e quer reviver os melhores momentos da sua infância, você está
-                    no lugar certo! O Game Station é o seu portal definitivo para baixar jogos e emuladores dos consoles que
-                    marcaram gerações. Aqui você encontra uma vasta seleção de títulos e ferramentas para rodar jogos dos
-                    seguintes consoles:</p>
+                no lugar certo! O Game Station é o seu portal definitivo para baixar jogos e emuladores dos consoles que
+                marcaram gerações. Aqui você encontra uma vasta seleção de títulos e ferramentas para rodar jogos dos
+                seguintes consoles:</p>
             <ul>
                 <li><a href="./src/pages/gba.html">🕹️ Game Boy Advance (GBA)</a></li>
                 <li><a href="./src/pages/gbc.html">🕹️ Game Boy Color (GBC)</a></li>
@@ -44,17 +54,17 @@
             <p>Tudo organizado, testado e pronto para download!</p>
         </div>
 
-        <h1>AVISO!</h1>
-        
-        <div align="center">
-            <h2 class="aviso">Para quem for usar os arquivos disponibilizados, saiba que eles são apenas para fins
-                recreativos.</h2>
+        <h2>AVISO!</h2>
+        <div class="aviso">
+            <h3>Para quem for usar os arquivos disponibilizados, saiba que eles são apenas para fins recreativos.</h3>
         </div>
+    </main>
 
-        <footer>
-            <p>&copy; 2025 Game Station. Todos os direitos reservados. | 
-            <a href="./src/pages/termos_de_uso.html" alt="Termos de uso"> Termos de uso</a></p>
-        </footer>
-    </body>
+    <footer>
+        <p>&copy; 2025 Game Station. Todos os direitos reservados. |
+            <a href="./src/pages/termos_de_uso.html">Termos de uso</a>
+        </p>
+    </footer>
+</body>
 
 </html>
