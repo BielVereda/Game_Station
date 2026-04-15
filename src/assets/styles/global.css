@@ -18,11 +18,18 @@ body {
 /* Header */
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    /* centraliza todo o bloco de navegação */
     align-items: center;
     padding: 20px;
     background: rgba(20, 20, 30, 0.8);
     border-bottom: 2px solid #00ffe5;
+}
+
+header nav {
+    display: flex;
+    gap: 15px;
+    /* espaçamento entre os links */
 }
 
 header a {
@@ -31,6 +38,7 @@ header a {
     padding: 10px 15px;
     border-radius: 8px;
     transition: all 0.3s ease;
+    text-decoration: none;
 }
 
 header a:hover {
@@ -38,6 +46,7 @@ header a:hover {
     color: #000;
     box-shadow: 0 0 10px #00ffe5, 0 0 20px #00ffe5;
 }
+
 
 /* Footer */
 footer {
